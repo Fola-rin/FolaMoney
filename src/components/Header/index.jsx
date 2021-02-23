@@ -67,7 +67,7 @@ const HeaderElems = (props) => {
 							</NavLinks>
 						</NavItem>
 						<NavBtn>
-							<NavBtnLink to="/signup">Get started</NavBtnLink>
+							<NavBtnLink to="dashboards">Get started</NavBtnLink>
 						</NavBtn>
 					</NavMenu>
 				</NavbarContainer>

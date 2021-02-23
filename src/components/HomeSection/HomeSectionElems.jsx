@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Link as LinkRouter } from "react-router-dom";
-// import { Link as LinkScroll } from "react-scroll";
+// import { Link as LinkRouter } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 
 export const HomeSectionContainer = styled.div`
 	display: flex;
@@ -83,7 +83,7 @@ export const HomeContentBtnWrapper = styled.div`
 	display: flex;
 `;
 
-export const HomeContentBtn = styled(LinkRouter)`
+export const HomeContentBtn = styled(LinkScroll)`
 	font-size: 16px;
 	padding: 10px 22px;
 	text-decoration: none;
@@ -111,8 +111,8 @@ export const HomeContentBtn = styled(LinkRouter)`
 export const HomeVectorContainer = styled.div`
 	flex: 50%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: center !important;
+	align-items: center !important;
 	@media screen and (max-width: 768px) {
 		align-items: revert;
 	}

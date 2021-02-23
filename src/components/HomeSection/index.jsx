@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -39,8 +40,26 @@ const HomeSection = () => {
 								data-aos="fade-up"
 								data-aos-duration="2000"
 							>
-								<HomeContentBtn to="/signup">Learn More</HomeContentBtn>
-								<HomeContentBtn to="/signup">Dashboards</HomeContentBtn>
+								<HomeContentBtn
+									smooth={true}
+									duration={500}
+									spy={true}
+									exact="true"
+									offset={-66}
+									to="about"
+								>
+									Learn More
+								</HomeContentBtn>
+								<HomeContentBtn
+									to="dashboards"
+									smooth={true}
+									duration={500}
+									spy={true}
+									exact="true"
+									offset={-66}
+								>
+									Dashboards
+								</HomeContentBtn>
 							</HomeContentBtnWrapper>
 						</HomeContent>
 					</HomeContentConatiner>

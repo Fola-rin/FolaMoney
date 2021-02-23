@@ -10,26 +10,27 @@ const Div = styled.div`
 `;
 
 const Signup = () => {
-	const [items, setItems] = useState([]);
-	useEffect(() => {
-		fetchStuff();
-	}, []);
-	const fetchStuff = async () => {
-		const data = await fetch("https://jsonplaceholder.typicode.com/photos");
+	// 	const [items, setItems] = useState([]);
+	// 	useEffect(() => {
+	// 		fetchStuff();
+	// 	}, []);
+	// 	const fetchStuff = async () => {
+	// 		const data = await fetch("https://jsonplaceholder.typicode.com/photos");
 
-		const items = await data.json();
-		console.log(items);
-		setItems(items);
-	};
+	// 		const items = await data.json();
+	// 		console.log(items);
+	// 		setItems(items);
+	// 	};
 	return (
 		<Div>
-			<h1>
+			{/* <h1>
 				{items.map((item, index) => (
 					<p key={index}>
 						<LinkRouter to={`/stuff/${item.id}`}>{item.title}</LinkRouter>
 					</p>
 				))}
-			</h1>
+			</h1> */}
+			<h1>Page under construction</h1>
 		</Div>
 	);
 };

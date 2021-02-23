@@ -88,7 +88,7 @@ export const NavBtn = styled.nav`
 		display: none;
 	} ;
 `;
-export const NavBtnLink = styled(LinkRouter)`
+export const NavBtnLink = styled(LinkScroll)`
 	padding: 10px 22px;
 	text-decoration: none;
 	background-color: #0ba86b;

@@ -1,4 +1,5 @@
 import React from "react";
+import { animateScroll as scroll } from "react-scroll";
 import {
 	SidebarContainer,
 	CloseIconWrapper,
@@ -19,13 +20,37 @@ const Sidebar = (props) => {
 
 				<SidebarWrapper>
 					<SidebarMenu>
-						<SidebarLink to="home" onClick={() => props.toggle()}>
+						<SidebarLink
+							smooth={true}
+							duration={500}
+							spy={true}
+							exact="true"
+							offset={-66}
+							to="home"
+							onClick={() => props.toggle()}
+						>
 							Home
 						</SidebarLink>
-						<SidebarLink to="about" onClick={() => props.toggle()}>
+						<SidebarLink
+							smooth={true}
+							duration={500}
+							spy={true}
+							exact="true"
+							offset={-66}
+							to="about"
+							onClick={() => props.toggle()}
+						>
 							About
 						</SidebarLink>
-						<SidebarLink to="dashboards" onClick={() => props.toggle()}>
+						<SidebarLink
+							to="dashboards"
+							smooth={true}
+							duration={500}
+							spy={true}
+							exact="true"
+							offset={-66}
+							onClick={() => props.toggle()}
+						>
 							Dashboards
 						</SidebarLink>
 					</SidebarMenu>
