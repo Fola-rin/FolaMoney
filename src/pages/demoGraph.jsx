@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Line, Bar, Pie, defaults } from "react-chartjs-2";
+
+import ScrollToTop from "../components/ScrollToTop";
 import {
 	DashboardContainer,
 	DashboardWrapper,
@@ -16,6 +18,7 @@ import {
 	Students,
 } from "./demoGraphElems";
 defaults.global.defaultFontFamily = "'Raleway', sans-serif";
+
 const DemoGraph = () => {
 	// const [student, setStudent] = useState([
 	// 	{ name: "Anu", avg: 78 },
@@ -39,6 +42,7 @@ const DemoGraph = () => {
 	};
 	return (
 		<>
+			<ScrollToTop />
 			<DashboardContainer>
 				<DashboardWrapper>
 					<DashboardHeader>
@@ -51,7 +55,7 @@ const DemoGraph = () => {
 						</HeaderContent>
 						<ProgressBar>
 							<Students onChange={setValue}>
-								<Student value="Anu">Anu</Student>
+								.<Student value="Anu">Anu</Student>
 								<Student value="Chidi">Chidi</Student>
 								<Student value="Bola">Bola</Student>
 								<Student value="John">John</Student>

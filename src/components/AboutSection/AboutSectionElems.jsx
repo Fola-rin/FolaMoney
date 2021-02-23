@@ -109,8 +109,8 @@ export const AboutVectorContainer = styled.div`
 	flex: 50%;
 	/* padding: 0 34px; */
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: center !important;
+	align-items: center !important;
 	@media screen and (max-width: 768px) {
 		align-items: revert;
 		margin: 20px 0 70px;
